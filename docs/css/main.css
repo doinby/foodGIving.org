@@ -33,7 +33,7 @@ time, mark, audio, video {
 	text-decoration: none;
 	list-style: none;
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	color: rgb(33, 33, 33);
 }
@@ -53,9 +53,9 @@ body {
 }
 
 header,
-main,
-footer {
-	padding: 1em;
+footer,
+.__content {
+	padding: 2em;
 }
 
 header,
@@ -63,12 +63,8 @@ main {
 	align-items: center;
 }
 
-main {
-	position: relative;
-}
-
 h1 {
-	padding-bottom: 1em;
+	padding-bottom: 60px;
 	font-family: 'Rubik', sans-serif;
 	font-size: 36px;
 	font-weight: 700;
@@ -104,20 +100,21 @@ header {
 }
 
 nav li {
-	padding: 0 0.5em;
+	padding: 0 16px;
 }
 
 main {
 	flex: 1 0 auto;
-	grid-template-rows: 2 / 3;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	position: relative;
 }
 
 footer {
 	flex-shrink: 0;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	background-color: Gainsboro;
 }
 
 .parallax {

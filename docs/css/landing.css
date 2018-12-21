@@ -12,13 +12,25 @@ For more information: http://getbem.com/introduction/
 
 /* Block ************************************************/
 
+/* Element **********************************************/
+
 .__content {
+	padding: 120px 8em;
 	grid-column: 1 / 4;
-	padding: 4em 8em;
 	align-items: center;
 }
 
-/* Element **********************************************/
+.__content:nth-child(even) {
+	background-color: Gainsboro;
+}
+
+.__content > div {
+	padding-bottom: 60px;
+}
+
+.__content > div:last-child {
+	padding-bottom: 0;
+}
 
 .__banner {
 	width: 100%;
@@ -27,11 +39,11 @@ For more information: http://getbem.com/introduction/
 	top: 0;
 	overflow: hidden;
 	filter: brightness(30%);
-	display: grid;
-	grid-template:
+	/* display: grid; */
+	/* grid-template:
 	"image1 image4"
 	"image2 image4"
-	"image3 image4";
+	"image3 image4"; */
 	z-index: -1;
 }
 
@@ -64,6 +76,41 @@ For more information: http://getbem.com/introduction/
 .__image4 {
 	grid-area: image4;
 	height: 600px;
+}
+
+.__card-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 3em;
+	align-items: center;
+}
+
+.__card {
+	align-items: center;
+	text-align: center;
+}
+
+.__card img {
+	width: 200px;
+	height: 200px;
+	padding-bottom: 60px;
+}
+
+.__question,
+.__answer {
+	padding-bottom: 16px;
+}
+
+.__answer:last-child {
+	padding-bottom: 0;
+}
+
+.__question::before {
+	content: "Q: ";
+}
+
+.__answer::before {
+	content: "A: ";
 }
 
 /* Modifier *********************************************/
