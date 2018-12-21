@@ -1,0 +1,59 @@
+/*
+
+This stylesheet is written in BEM
+
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier OR .block--modifier
+
+For more information: http://getbem.com/introduction/
+
+*/
+
+/* Block ************************************************/
+
+/* Element **********************************************/
+
+.__banner {
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	filter: brightness(30%);
+	display: grid;
+	grid-template:
+	"image1 image4"
+	"image2 image4"
+	"image3 image4";
+	z-index: -1;
+}
+
+.__banner-text {
+	text-align: center;
+	grid-column: 2/3;
+	grid-row: 1 / 2;
+}
+
+.__image1 {
+	grid-area: image1;
+}
+
+.__image2 {
+	grid-area: image2;
+}
+
+.__image3 {
+	grid-area: image3;
+}
+
+.__image1,
+.__image2,
+.__image3 {
+	height: 200px;
+}
+
+.__image4 {
+	grid-area: image4;
+	height: 600px;
+}
+
+/* Modifier *********************************************/
