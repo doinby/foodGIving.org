@@ -10,7 +10,7 @@ For more information: http://getbem.com/introduction/
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway|Rubik:700');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Rubik');
 
 /* Reset CSS ********************************************/
 html, body, div, span, applet, object, iframe,
@@ -34,7 +34,7 @@ time, mark, audio, video {
 	list-style: none;
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 400;
 	color: rgb(33, 33, 33);
 }
 
@@ -68,6 +68,7 @@ main {
 }
 
 h1 {
+	padding-bottom: 1em;
 	font-family: 'Rubik', sans-serif;
 	font-size: 36px;
 	font-weight: 700;
@@ -78,7 +79,17 @@ h2 {
 }
 
 h3 {
+	padding-bottom: 18px;
 	font-size: 18px;
+}
+
+p {
+	text-indent: 14px;
+	line-height: 1.6;
+}
+
+b {
+	font-weight: 700;
 }
 
 a:hover,
@@ -133,6 +144,10 @@ footer {
 	margin-left: 2em;
 }
 
+.__contact p {
+	text-indent: 0;
+}
+
 .__social-media-links a:nth-child(even) {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
@@ -159,6 +174,13 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+}
+
+li .--button {
+	padding: 0.8em;
+	background-color: rgb(230, 0, 115);
+	color: Snow;
+	font-weight: 700;
 }
 
 .--white *{

@@ -12,11 +12,19 @@ For more information: http://getbem.com/introduction/
 
 /* Block ************************************************/
 
+.__content {
+	grid-column: 1 / 4;
+	padding: 4em 8em;
+	align-items: center;
+}
+
 /* Element **********************************************/
 
 .__banner {
 	width: 100%;
+	height: 600px;
 	position: absolute;
+	top: 0;
 	overflow: hidden;
 	filter: brightness(30%);
 	display: grid;
@@ -28,9 +36,11 @@ For more information: http://getbem.com/introduction/
 }
 
 .__banner-text {
+	height: 600px;
 	text-align: center;
-	grid-column: 2/3;
-	grid-row: 1 / 2;
+	align-items: center;
+	justify-content: center;
+	grid-column: 1 / 4;
 }
 
 .__image1 {
