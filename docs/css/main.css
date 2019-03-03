@@ -122,11 +122,11 @@ a:active {
 	width: 150px;
 }
 
-nav li {
+.__navigation-bar li {
 	padding: 0 16px;
 }
 
-nav li:last-child {
+.__navigation-bar li:last-child {
 	padding-right: 0;
 }
 
@@ -211,23 +211,23 @@ footer li {
 	flex-direction: column;
 }
 
-header #--button {
+header #button {
 	text-transform: uppercase;
 }
 
-#--button {
+#button {
 	padding: 0.8em;
 	background-color: rgb(58, 207, 115);
 	color: Snow;
 	font-weight: 700;
 }
 
-#--button:hover,
-#--button:active {
+#button:hover,
+#button:active {
 	background-color: rgb(230, 0, 115);
 }
 
-#--white *{
+#white *{
 	color: Snow;
 	fill: Snow;
 }
