@@ -12,6 +12,8 @@ For more information: http://getbem.com/introduction/
 
 /* Block ************************************************/
 
+/* N/A */
+
 /* Element **********************************************/
 
 .__banner {
@@ -19,13 +21,13 @@ For more information: http://getbem.com/introduction/
 	height: 600px;
 	position: absolute;
 	top: 0;
-	overflow: hidden;
-	filter: brightness(30%);
-	/* display: grid; */
-	/* grid-template:
-	"image1 image4"
-	"image2 image4"
-	"image3 image4"; */
+	/* overflow: hidden; */
+	/* filter: brightness(30%); */
+	/* background-color: rgb(230, 0, 115); */
+	background-image: url("../images/image1.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 	z-index: -1;
 }
 
@@ -39,29 +41,6 @@ For more information: http://getbem.com/introduction/
 
 .__banner-text h1 {
 	padding-bottom: 30px;
-}
-
-.__image1 {
-	grid-area: image1;
-}
-
-.__image2 {
-	grid-area: image2;
-}
-
-.__image3 {
-	grid-area: image3;
-}
-
-.__image1,
-.__image2,
-.__image3 {
-	height: 200px;
-}
-
-.__image4 {
-	grid-area: image4;
-	height: 600px;
 }
 
 .__card-wrapper {
@@ -99,3 +78,5 @@ For more information: http://getbem.com/introduction/
 }
 
 /* Modifier *********************************************/
+
+/* N/A */

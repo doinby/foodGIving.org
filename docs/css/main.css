@@ -54,7 +54,7 @@ body {
 
 header,
 footer {
-	padding: 60px 0;
+	padding: 2em 0;
 }
 
 header {
@@ -78,18 +78,6 @@ footer {
 	flex-shrink: 0;
 	justify-content: space-evenly;
 	background-color: #37474F;
-}
-
-.parallax {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-image: url("../images/banner.png");
-	background-attachment: fixed;
-	background-position: right center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: -1;
 }
 
 /* Element **********************************************/
