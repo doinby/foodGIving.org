@@ -9,5 +9,6 @@ List of landing page features:
 - Vanilla CSS3, fast and responsive
 - Parallax media
 - Animated links and buttons
+- Using BEM methology for structuring CSS code
 
 Web prototype was developed during an 48-hours hackathon using HTML and CSS. Visit live version at https://chinhdo.co/FoodGiving-AppPrototype/
