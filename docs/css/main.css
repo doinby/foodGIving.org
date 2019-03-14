@@ -40,37 +40,12 @@ time, mark, audio, video {
 
 /* Block ************************************************/
 
-html {
-	height: 100%;
-}
-
 body {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	background-color: Snow;
-}
-
-header,
-footer {
-	padding: 2em 0;
-}
-
-header {
-	align-items: center;
-	justify-content: space-around;
-}
-
-main {
-	align-items: center;
-}
-
-main {
-	flex: 1 0 auto;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	position: relative;
 }
 
 footer {
@@ -80,7 +55,60 @@ footer {
 	background-color: #37474F;
 }
 
+footer,
+header {
+	padding: 2em 0;
+}
+
+header {
+	align-items: center;
+	justify-content: space-around;
+}
+
+html {
+	height: 100%;
+}
+
+main {
+	align-items: center;
+}
+
+main {
+	flex: 1 0 auto;
+	position: relative;
+}
+
 /* Element **********************************************/
+
+a:hover,
+a:active {
+	fill: rgb(230, 0, 115);
+	color: rgb(230, 0, 115);
+}
+
+footer div,
+footer h3,
+footer p,
+footer a:link {
+	font-weight: 600;
+	color: Snow;
+	fill: Snow;
+}
+
+footer a:hover,
+footer a:active {
+	fill: rgb(230, 0, 115);
+	color: rgb(230, 0, 115);
+}
+
+footer li {
+	padding: 8px 0;
+}
+
+footer svg {
+	width: 32px;
+	height: auto;
+}
 
 h1, h2 {
 	text-align: center;
@@ -108,32 +136,34 @@ p {
 	line-height: 1.6;
 }
 
-b {
-	font-weight: 700;
+.__banner-text * {
+	color: white;
 }
 
-a:hover,
-a:active {
-	fill: rgb(230, 0, 115);
-	color: rgb(230, 0, 115);
+.__contact p {
+	text-indent: 0;
 }
 
-.__logo {
-	width: 150px;
-}
-
-.__navigation-bar li {
-	padding: 0 16px;
-}
-
-.__navigation-bar li:last-child {
-	padding-right: 0;
+.__contact,
+.__quick-links,
+.__social-media {
+	margin-left: 2em;
 }
 
 .__content {
 	padding: 120px 8em;
-	grid-column: 1 / 4;
 	align-items: center;
+}
+
+.__copyright {
+	
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+}
+
+.__copyright::before {
+	content:"\00a9" "\00a0";
 }
 
 .__content > div {
@@ -148,65 +178,23 @@ a:active {
 	background-color: rgb(58, 207, 115);
 }
 
-footer div,
-footer h3,
-footer p,
-footer a:link {
-	font-weight: 600;
-	color: Snow;
-	fill: Snow;
+.__logo img {
+	width: 150px;
 }
 
-footer a:hover,
-footer a:active {
-	fill: rgb(230, 0, 115);
-	color: rgb(230, 0, 115);
+.__navigation-bar li {
+	padding: 0 16px;
 }
 
-footer svg {
-	width: 32px;
-	height: auto;
-}
-
-.__quick-links,
-.__social-media,
-.__contact {
-	margin-left: 2em;
-}
-
-footer li {
-	padding: 8px 0;
-}
-
-.__contact p {
-	text-indent: 0;
+.__navigation-bar li:last-child {
+	padding-right: 0;
 }
 
 .__social-media-links a:nth-child(even) {
 	padding: 0 1em;
 }
 
-.__copyright {
-	grid-column: 1 / 4;
-	position: absolute;
-	bottom: 12px;
-	right: 12px;
-}
-
-.__copyright::before {
-	content:"\00a9" "\00a0";
-}
-
 /* Modifier *********************************************/
-
-#--flex {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-header #button {
-	text-transform: uppercase;
-}
 
 #button {
 	padding: 0.8em;
@@ -220,9 +208,20 @@ header #button {
 	background-color: rgb(230, 0, 115);
 }
 
-#white *{
-	color: Snow;
-	fill: Snow;
+header #button {
+	text-transform: uppercase;
+}
+
+.--flex-horizontal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.--flex-vertical {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 /* Responsive Layout*************************************/
