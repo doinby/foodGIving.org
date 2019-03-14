@@ -199,16 +199,9 @@ footer li {
 
 /* Modifier *********************************************/
 
-.--flex-horizontal {
+#--flex {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-}
-
-.--flex-vertical {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
 }
 
 header #button {
@@ -231,3 +224,5 @@ header #button {
 	color: Snow;
 	fill: Snow;
 }
+
+/* Responsive Layout*************************************/
